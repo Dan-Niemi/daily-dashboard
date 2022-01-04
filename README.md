@@ -9,3 +9,8 @@ Double click to create note
 - firestore/other data save
 - connect to email/cal/
 - simple drawing
+- z-index
+- drag and drop
+
+
+

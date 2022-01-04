@@ -1,7 +1,7 @@
 export default class Note {
   constructor(posX, posY,id, text, width, height,) {
     const DEFAULT_WIDTH = 300
-    const DEFAULT_HEIGHT = 150
+    const DEFAULT_HEIGHT = 60
 
     this.id = id || new Date().valueOf();
     this.text = text || '';
