@@ -35,6 +35,7 @@ export default class Note {
 
     this.noteGrab.addEventListener('mousedown', this.drag.bind(this))
     this.noteText.addEventListener('input', this.updateText.bind(this))
+    this.noteText.addEventListener('keydown', this.onTextKeydown.bind(this))
     this.noteText.addEventListener('blur', this.setLocalStorage.bind(this))
     this.noteText.addEventListener('mouseup', this.setLocalStorage.bind(this))
   }
@@ -78,5 +79,10 @@ export default class Note {
   setLocalStorage() {
     let obj = {posX: this.posX, posY: this.posY,text: this.text, width: parseInt(this.noteText.style.width),height: parseInt(this.noteText.style.height)}
     localStorage.setItem(this.id, JSON.stringify(obj))
+  }
+  onTextKeydown(e) {
+    if (e.key === 'Escape' || (e.metaKey && e.key === 'Enter')){
+      this.noteText.blur()
+    }
   }
 }

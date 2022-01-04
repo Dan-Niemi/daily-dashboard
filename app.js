@@ -9,6 +9,7 @@ function createNote(e) {
   let posY = e.clientY - rect.top
   let newNote = new Note(posX, posY)
   noteboard.appendChild(newNote)
+  newNote.lastChild.focus()
 }
 
 function getNotesFromLocalStorage() {
