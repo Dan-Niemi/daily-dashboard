@@ -9,7 +9,13 @@
   --color2:hsl(0, 0%, 25%);
   --color3:hsl(0, 0%, 50%);
   --color4:hsl(0, 0%, 75%);
-  --color5:hsl(0, 0%, 90%);
+  --color5:hsl(0, 0%, 93%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'libre franklin';
 }
 
 html,body{
@@ -30,7 +36,7 @@ html,body{
   position: absolute;
   border-radius: var(--space1);
   overflow: hidden;
-  box-shadow: 4px 4px 12px hsla(0, 0%, 0%,.1);
+  box-shadow: 4px 4px 36px hsla(0, 0%, 0%,.1);
 
 }
 .note__text-area {
@@ -44,5 +50,14 @@ html,body{
 }
 .note__grab-area {
   height: var(--space3);
-  background-color: var(--color4);
+  background-color: hsl(0deg 0% 80%);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  justify-content: space-between;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
+

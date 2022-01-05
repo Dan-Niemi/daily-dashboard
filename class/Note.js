@@ -21,7 +21,8 @@ export default class Note {
     this.note.style.top = this.posY + 'px'
 
     this.noteGrab = document.createElement('div')
-    this.noteGrab.setAttribute('class', 'note__grab-area')
+    this.noteGrab.className = 'note__grab-area'
+    this.noteGrab.textContent = 'Placeholder'
 
     this.noteText = document.createElement('textarea')
     this.noteText.className = 'note__text-area'

@@ -1,4 +1,4 @@
-import Note from "./class/Note.js";
+import Note from "../class/Note.js";
 
 let noteboard = document.querySelector('.noteboard');
 noteboard.addEventListener('dblclick', createNote)
