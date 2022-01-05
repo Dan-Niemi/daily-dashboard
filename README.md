@@ -3,6 +3,9 @@
 Double click to create note
 
 ## Todo
+- delete
+- collapse
+- title bar
 - search
 - daily calendar
 - markdown syntax/styling
